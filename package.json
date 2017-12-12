@@ -1,0 +1,15 @@
+{
+  "name": "repo-finder",
+  "version": "1.0.0",
+  "description": "A website to find projects that want help",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/obrien66/project-finder.git",
+  "author": "OBRIEN66 <nicholas.obrien@ucc.on.ca>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
