@@ -16,6 +16,17 @@ function handler(req, res) {
 				}
 			})
 		}
+		else if (req.url === "/post") {
+			fs.readFile(__dirname + "/../public/publish.html", "utf8", (err, data) => {
+				if (err) {
+					error(404, res)
+				}
+				else {
+					res.writeHead(200, {'content-type': 'text/html'})
+					res.end(data)
+				}
+			})
+		}
 		else if (extension === "css") {
 			var filename = req.url.split("/").reverse()[0]
 			fs.readFile(__dirname + "/../public/" + filename, "utf8", (err, data) => {
@@ -46,6 +57,7 @@ function error(code, res){
 				<meta charset="utf8">
 				<title>${code}: Repo Finder</title>
 				<link rel="stylesheet" href="/master.css">
+				<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 			</head>
 			<body>
 				<div class="container">

@@ -4,7 +4,8 @@
   "description": "A website to find projects that want help",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "config": "node src/config.js"
   },
   "repository": "https://github.com/obrien66/project-finder.git",
   "author": "OBRIEN66 <nicholas.obrien@ucc.on.ca>",

@@ -15,7 +15,7 @@ stdin.on('readable', function(){
 				throw err
 			}
 			else {
-				console.log("wrote to .env -> PORT=" + chunk)
+				console.log("Wrote to .env -> PORT=" + chunk)
 				stdin.pause()
 			}
 		})

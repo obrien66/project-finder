@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Repo Finder</title>
+	<link rel="stylesheet" type="text/css" href="/master.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="display">
+			<h1> <i class="fa fa-paper-plane"></i> Post a project</h1>
+			<p>Paste the your repository's URL and give your project a description.</p>
+			<a href="/">Back</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="card">
+			<form method="post" action="/">
+				<p class="label">
+					Project Title
+					<input class="input" type="text" name="title">
+				</p>
+				<p class="label">
+					Repository URL <i class="fa fa-github"></i>
+					<input class="input" type="text" name="url">
+				</p>
+
+				<p class="label">
+					Project Description <i class="fa fa-comment-o" aria-hidden="true"></i>
+					<textarea class="input" name="description"></textarea>
+				</p>
+				<input class="button" type="submit" name="submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
