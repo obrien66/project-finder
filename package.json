@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "config": "node src/config.js"
+    "config": "node src/config.js",
+    "build": "browserify public/cards.js -o public/action.js"
   },
   "repository": "https://github.com/obrien66/project-finder.git",
   "author": "OBRIEN66 <nicholas.obrien@ucc.on.ca>",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "mustache": "^2.3.0"
   }
 }
