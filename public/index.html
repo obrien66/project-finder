@@ -12,19 +12,19 @@
 		<div class="display">
 			<h1><i class="fa fa-file"></i> Repo Finder</h1>
 			<p>Post projects that need help and find projects that want help.</p>
-			<a href="/post"> <i class="fa fa-paper-plane" aria-hidden="true"></i> Post a project</a>
+			<a href="/publish.html"> <i class="fa fa-paper-plane" aria-hidden="true"></i> Post a project</a>
 		</div>
 		<br>
 		<div id="cardlist">
 			{{#list}}
 				<div class="card">
-					<h2>{{title}}</h2>
+					<h2>{{url}}</h2>
 					<i class="fa fa-github"></i> <a href="{{url}}">{{url}}</a>
-					<p>{{description}}</p>
+					<p>{{url}}</p>
 				</div>
 			{{/list}}
 		</div>
 	</div>
-	<script type="text/javascript" src="cards.js"></script>
+	<!-- <script type="text/javascript" src="cards.js"></script> -->
 </body>
 </html>

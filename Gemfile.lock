@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dotenv (2.2.1)
+    mustache (1.0.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv (~> 2.2)
+  mustache (~> 1.0)
+
+BUNDLED WITH
+   1.16.0

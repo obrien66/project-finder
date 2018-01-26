@@ -10,25 +10,16 @@
 	<div class="container">
 		<div class="display">
 			<h1> <i class="fa fa-paper-plane"></i> Post a project</h1>
-			<p>Paste the your repository's URL and give your project a description.</p>
+			<p>Paste the your repository's URL and we will find it's description and title.</p>
 			<a href="/">Back</a>
 		</div>
 	</div>
 	<div class="container">
 		<div class="card">
-			<form method="post" action="/">
-				<p class="label">
-					Project Title
-					<input class="input" type="text" name="title">
-				</p>
+			<form method="get" action="/">
 				<p class="label">
 					Repository URL <i class="fa fa-github"></i>
-					<input class="input" type="text" name="url">
-				</p>
-
-				<p class="label">
-					Project Description <i class="fa fa-comment-o" aria-hidden="true"></i>
-					<textarea class="input" name="description"></textarea>
+					<input class="input" type="text" name="url" value="https://gitub.com/">
 				</p>
 				<input class="button" type="submit" name="submit">
 			</form>
